@@ -1,5 +1,5 @@
 import React from 'react';
-import './NextPage.module.css';
+import NextPageCSS from './NextPage.module.css';
 
 export default function NextPage(props) {
 
