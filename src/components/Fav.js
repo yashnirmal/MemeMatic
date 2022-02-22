@@ -1,7 +1,5 @@
 import React from 'react';
 import FavMemeCard from './FavMemeCard';
-import Trash from '../images/trash.png';
-import Share from '../images/share.png';
 import Nothing from './Nothing';
 
 export default function Fav() {
@@ -29,7 +27,7 @@ export default function Fav() {
         {localmemes.map((meme, index) => {
           return (
             <div className="col-xl-4 my-5">
-              <FavMemeCard imgurl={meme} />
+              <FavMemeCard imgurl={meme} index={index}/>
             </div>
           );
         })}
