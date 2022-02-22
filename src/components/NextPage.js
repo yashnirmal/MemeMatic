@@ -1,5 +1,4 @@
 import React from 'react';
-import NextCSS from './NextPage.module.css';
 
 export default function NextPage(props) {
 

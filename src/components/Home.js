@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import MemeCard from './MemeCard';
 import NextPage from './NextPage';
 
-let numberClicked=0;
 
 export default function Home() {
 
@@ -33,8 +32,6 @@ export default function Home() {
   function moreMemeClicked(){
     setMemes([]);
   }
-
-
 
   return (
     <div className="container my-3">
