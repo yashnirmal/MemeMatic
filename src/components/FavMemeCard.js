@@ -23,28 +23,39 @@ export default function FavMemeCard(props) {
 
     }
 
+    function copyMemeUrl() {
+      let input = document.createElement("input");
+      input.setAttribute("value", props.imgurl);
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      input.parentNode.removeChild(input);
+    }
+
 
   return (
     <div className={FavMemeCSS.box}>
-      <img id='memeIMG' className={FavMemeCSS.memeImg} src={props.imgurl} alt="meme" />
+      <img
+        id="memeIMG"
+        className={FavMemeCSS.memeImg}
+        src={props.imgurl}
+        alt="meme"
+      />
       <div className={FavMemeCSS.divbutton}>
         <img
-          id="img1"
           src={Share}
           className={FavMemeCSS.shareImg}
-          onClick={shareBtnClicked}
+          onClick={copyMemeUrl}
           alt="share"
         />
         <img
-        id = "trashBtn"
+          id="trashBtn"
           src={Trash}
-          id="img2"
           className={FavMemeCSS.trashImg}
           onClick={trashBtnClicked}
           alt="delete"
         />
       </div>
     </div>
-    
   );
 }
