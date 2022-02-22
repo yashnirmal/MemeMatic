@@ -1,0 +1,41 @@
+.box{
+    width: 95%;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin-bottom:10px;
+}
+.box:hover{
+    background-color: rgba(105, 105, 105, 0.5);
+}
+.memeImg{
+    border-radius: 10px;
+    width: 100%;
+}
+.divbutton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-bottom:0px;
+}
+.shareImg{
+    padding: 5px;
+    width: 40px;
+}
+.shareImg:hover{
+    background-color: rgba(82, 255, 82, 0.5);
+    border-radius: 100px; 
+}
+.shareImg:active{
+    background-color: rgba(57, 177, 57, 0.5);
+    border-radius: 100px; 
+}
+.trashImg{
+    padding: 5px;
+    width: 40px;
+}
+.trashImg:hover{
+    background-color: rgb(255,23,22,0.5);
+    border-radius: 100px; 
+}

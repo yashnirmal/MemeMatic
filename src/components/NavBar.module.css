@@ -1,0 +1,50 @@
+.heading{
+    display: inline-block;
+    font-size: 40px;
+    margin:20px;
+    
+}
+.flexLink{
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Link{
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 4px solid transparent;
+}
+.Link:hover{
+    color: white;
+    background-color: rgb(255,0,0,0.1);
+}
+.activeLink{
+    text-decoration: none;
+    padding : 15px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 4px solid transparent;
+    color: red;
+    border-bottom: 4px solid red;
+}
+.activeLink:hover{
+    color: red;
+}
+.logoImg{
+    width: 70px;
+    height: auto;
+}
+.logoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
