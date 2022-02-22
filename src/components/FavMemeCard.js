@@ -8,10 +8,6 @@ export default function FavMemeCard(props) {
 
     const memeIMG = document.getElementById('memeIMG');
 
-    function shareBtnClicked(){
-        //ToDo
-    }
-
     function trashBtnClicked(){
     
       let locmeme = JSON.parse(localStorage.getItem("localMemesStored"));
