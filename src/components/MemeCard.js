@@ -3,13 +3,8 @@ import MemeCSS from './MemeCard.module.css';
 import whiteHeart from '../images/bordered_heart.png';
 import blueHeart from '../images/blue_heart.png';
 import Share from '../images/share.png';
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 
-
-
-toast.configure();
 export default function MemeCard(props) {
 
   function likeBtnClicked(event){
@@ -28,8 +23,6 @@ export default function MemeCard(props) {
     
     localStorage.setItem("localMemesStored",JSON.stringify(locmeme));
     
-    //Toast Notification
-    //Maybe
     
   }
 
